@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build Ordyvo.Api",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "--no-restore",
+        "${workspaceFolder}/Ordyvo_API/Ordyvo.Api/Ordyvo.Api.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

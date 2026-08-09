@@ -1,0 +1,6 @@
+@Ordyvo_Api_HostAddress = http://localhost:5032
+
+GET {{Ordyvo_Api_HostAddress}}/api/client
+Accept: application/json
+
+###

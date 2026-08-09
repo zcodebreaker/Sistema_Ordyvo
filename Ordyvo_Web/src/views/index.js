@@ -1,0 +1,12 @@
+export { default as ClienteCadastro } from './ClienteCadastro/ClienteCadastro';
+export { default as Clientes } from './Clientes/Clientes';
+export { default as Comprovantes } from './Comprovantes/Comprovantes';
+export { default as Dashboard } from './Dashboard/Dashboard';
+export { default as Funcionarios } from './Funcionarios/Funcionarios';
+export { default as ItensValores } from './ItensValores/ItensValores';
+export { default as NotFound } from './NotFound/NotFound';
+export { default as Orcamentos } from './Orcamentos/Orcamentos';
+export { default as OrdensServico } from './OrdensServico/OrdensServico';
+export { default as Servicos } from './Servicos/Servicos';
+export { default as Login } from './Login/Login';
+export { default as Register } from './Register/Register';

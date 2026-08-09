@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path="Assets/UI_Client_Page.png" />
+    <File Path="Assets/UI_Dashbord.png" />
+    <File Path="Assets/UI_Login.png" />
+    <File Path="Assets/UI_Splash.png" />
+  </Folder>
+  <Project Path="Ordyvo_API/Ordyvo.Api/Ordyvo.Api.csproj" Id="9a561757-e9d0-4b55-ac95-5fa3e94a9c73" />
+  <Project Path="Ordyvo_API/Ordyvo.Application/Ordyvo.Application.csproj" />
+  <Project Path="Ordyvo_API/Ordyvo.Contracts/Ordyvo.Contracts.csproj" />
+  <Project Path="Ordyvo_API/Ordyvo.Domain/Ordyvo.Domain.csproj" />
+  <Project Path="Ordyvo_API/Ordyvo.Infrastructure/Ordyvo.Infrastructure.csproj" />
+  <Project Path="Ordyvo_Desktop/Ordyvo_Desktop.csproj" />
+  <Project Path="Ordyvo_Register/Ordyvo_Register.csproj" Id="6b038706-4fd0-4d80-8452-c043a28842ad" />
+</Solution>

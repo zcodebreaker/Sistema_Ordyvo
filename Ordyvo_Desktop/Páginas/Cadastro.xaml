@@ -1,0 +1,79 @@
+﻿<Page x:Class="Codev_V2.Páginas.Cadastro"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Codev_V2.Páginas"
+      xmlns:hc="https://handyorg.github.io/handycontrol" 
+      mc:Ignorable="d" 
+      d:DesignHeight="620" d:DesignWidth="800"
+      Background="#212328"
+      Title="Cadastro">
+    <Grid>
+        <Grid Margin="30,30,30,7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <!-- BLOCO CLIENTE -->
+            <GroupBox Header="DADOS DO CLIENTE" FontWeight="Bold" Foreground="#E0E1E6">
+                <Grid Margin="15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!-- Nome -->
+                    <TextBlock Text="Cliente:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Foreground="#E0E1E6"/>
+                    <hc:TextBox x:Name="Clientes_" Grid.Row="0" Grid.Column="1" BorderBrush="#2A2D34" Background="#2A2D34" Foreground="#E0E1E6" CaretBrush="#E0E1E6"/>
+                    <!-- Endereço -->
+                    <TextBlock Text="Endereço:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Foreground="#E0E1E6"/>
+                    <hc:TextBox x:Name="Endereço_" Grid.Row="2" Grid.Column="1" BorderBrush="#2A2D34" Background="#2A2D34" Foreground="#E0E1E6" CaretBrush="#E0E1E6"/>
+                    <!-- Número -->
+                    <TextBlock Text="Número:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" Foreground="#E0E1E6" Margin="0,6,0,0" Grid.RowSpan="2"/>
+                    <hc:TextBox  x:Name="Número_" Grid.Row="4" Grid.Column="1" BorderBrush="#2A2D34" Background="#2A2D34" Margin="422,0,0,10" Grid.RowSpan="2" Foreground="#E0E1E6" CaretBrush="#E0E1E6"/>
+                    <!-- Bairro -->
+                    <TextBlock Text="Bairro:" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Foreground="#E0E1E6"/>
+                    <hc:TextBox x:Name="Bairro_" Grid.Row="6" Grid.Column="1" BorderBrush="#2A2D34" Background="#2A2D34" Foreground="#E0E1E6" CaretBrush="#E0E1E6"/>
+                </Grid>
+            </GroupBox>
+            <!-- BLOCO APARELHO -->
+            <GroupBox Header="DADOS DO APARELHO" Grid.Row="2" FontWeight="Bold" Margin="0,0,0,118" Foreground="#E0E1E6">
+                <Grid Margin="15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="118*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!-- Marca -->
+                    <TextBlock Text="Marca:" Grid.Column="0" VerticalAlignment="Center" Foreground="#E0E1E6"/>
+                    <hc:TextBox x:Name="Marca_" Grid.Row="0" Grid.Column="1" BorderBrush="#2A2D34" Background="#2A2D34" Grid.ColumnSpan="2" Margin="0,0,0,10" Grid.RowSpan="2" Foreground="#E0E1E6" CaretBrush="#E0E1E6"/>
+                    <!-- Modelo -->
+                    <TextBlock Text="Modelo:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Foreground="#E0E1E6"/>
+                    <hc:TextBox x:Name="Aparelho_" Grid.Row="2" Grid.Column="1" BorderBrush="#2A2D34" Background="#2A2D34" Grid.ColumnSpan="2" Margin="0,0,0,10" Grid.RowSpan="2" Foreground="#E0E1E6" CaretBrush="#E0E1E6"/>
+                    <!-- Defeito -->
+                    <TextBlock Text="Defeito Relatado:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" Foreground="#E0E1E6"/>
+                    <hc:TextBox x:Name="Defeito_" Grid.Row="4" Grid.Column="1" Height="80" AcceptsReturn="True" TextWrapping="Wrap" BorderBrush="#2A2D34" Background="#2A2D34" Grid.ColumnSpan="2" Foreground="#E0E1E6" CaretBrush="#E0E1E6"/>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="Salvar_" Content="Salvar Dados" VerticalAlignment="Top" Height="30" Background="#2A7AFF"  BorderThickness="0,0,0,0" Foreground="White" FontWeight="SemiBold" Margin="6,286,5,0" Grid.Row="2" Click="Salvar__Click"/>
+            <Button x:Name="Limpar_" Content="Limpar Campos" VerticalAlignment="Top" Height="30" Background="Red"  BorderThickness="0,0,0,0" Foreground="White" FontWeight="SemiBold" Margin="6,248,5,0" Grid.Row="2" Click="Limpar__Click"/>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,23 @@
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Node.js and frontend output
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+
+# Local tooling and logs
+.vs/
+.agents/
+.git-preexisting-backup/
+*.log
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+Ordyvo_API/Ordyvo.Api/appsettings.json

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ordyvo.Contracts\Ordyvo.Contracts.csproj" />
+    <ProjectReference Include="..\Ordyvo.Domain\Ordyvo.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

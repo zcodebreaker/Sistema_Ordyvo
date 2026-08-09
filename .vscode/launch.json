@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C#: Ordyvo_API [https]",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Ordyvo.Api",
+      "program": "${workspaceFolder}/Ordyvo_API/Ordyvo.Api/bin/Debug/net10.0/Ordyvo.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Ordyvo_API/Ordyvo.Api",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": "C#: Ordyvo.Api [https]",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Ordyvo.Api",
+      "program": "${workspaceFolder}/Ordyvo_API/Ordyvo.Api/bin/Debug/net10.0/Ordyvo.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Ordyvo_API/Ordyvo.Api",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    }
+  ]
+}
